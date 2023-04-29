@@ -39,6 +39,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelTop.SuspendLayout();
             this.panelDesktop.SuspendLayout();
@@ -161,6 +162,7 @@
             // 
             // panelDesktop
             // 
+            this.panelDesktop.Controls.Add(this.label5);
             this.panelDesktop.Controls.Add(this.label4);
             this.panelDesktop.Controls.Add(this.label3);
             this.panelDesktop.Controls.Add(this.label2);
@@ -199,6 +201,15 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "yahor guapo";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(196, 201);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(113, 20);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Kemish imbecil";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -233,6 +244,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 
