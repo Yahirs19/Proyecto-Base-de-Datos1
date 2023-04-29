@@ -35,7 +35,9 @@
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.ibChildForm = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
+            this.panelTop.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -53,6 +55,7 @@
             // 
             // panelTop
             // 
+            this.panelTop.Controls.Add(this.ibChildForm);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(220, 0);
             this.panelTop.Name = "panelTop";
@@ -97,6 +100,7 @@
             this.iconButton1.TabIndex = 1;
             this.iconButton1.Text = "Home";
             this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // iconButton2
             // 
@@ -116,6 +120,7 @@
             this.iconButton2.TabIndex = 2;
             this.iconButton2.Text = "Gestion de Recibos";
             this.iconButton2.UseVisualStyleBackColor = false;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // iconButton3
             // 
@@ -133,8 +138,28 @@
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Size = new System.Drawing.Size(220, 60);
             this.iconButton3.TabIndex = 3;
-            this.iconButton3.Text = "Home";
+            this.iconButton3.Text = "SALIR";
             this.iconButton3.UseVisualStyleBackColor = false;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            // 
+            // ibChildForm
+            // 
+            this.ibChildForm.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.ibChildForm.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ibChildForm.FlatAppearance.BorderSize = 0;
+            this.ibChildForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibChildForm.IconChar = FontAwesome.Sharp.IconChar.HomeLg;
+            this.ibChildForm.IconColor = System.Drawing.Color.Black;
+            this.ibChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibChildForm.IconSize = 36;
+            this.ibChildForm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibChildForm.Location = new System.Drawing.Point(0, 0);
+            this.ibChildForm.Margin = new System.Windows.Forms.Padding(0);
+            this.ibChildForm.Name = "ibChildForm";
+            this.ibChildForm.Size = new System.Drawing.Size(220, 80);
+            this.ibChildForm.TabIndex = 2;
+            this.ibChildForm.Text = "Home";
+            this.ibChildForm.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -146,8 +171,10 @@
             this.Controls.Add(this.panelMenu);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
+            this.panelTop.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -161,6 +188,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelTop;
         private System.Windows.Forms.Panel panelDesktop;
+        private FontAwesome.Sharp.IconButton ibChildForm;
     }
 }
 
