@@ -36,8 +36,11 @@
             this.panelTop = new System.Windows.Forms.Panel();
             this.ibChildForm = new FontAwesome.Sharp.IconButton();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelTop.SuspendLayout();
+            this.panelDesktop.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -155,11 +158,31 @@
             // 
             // panelDesktop
             // 
+            this.panelDesktop.Controls.Add(this.button2);
+            this.panelDesktop.Controls.Add(this.button1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 80);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(962, 543);
             this.panelDesktop.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(74, 105);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(218, 89);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(334, 89);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(218, 89);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -175,6 +198,7 @@
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
             this.panelTop.ResumeLayout(false);
+            this.panelDesktop.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -189,6 +213,8 @@
         private System.Windows.Forms.Panel panelTop;
         private System.Windows.Forms.Panel panelDesktop;
         private FontAwesome.Sharp.IconButton ibChildForm;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
