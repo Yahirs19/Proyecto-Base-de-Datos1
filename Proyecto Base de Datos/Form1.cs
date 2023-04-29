@@ -168,5 +168,10 @@ namespace Proyecto_Base_de_Datos
         {
             OpenChildForm(new Formularios.Home());
         }
+
+        private void ibChildForm_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

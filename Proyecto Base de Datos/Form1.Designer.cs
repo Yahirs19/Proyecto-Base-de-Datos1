@@ -152,6 +152,7 @@
             this.ibChildForm.TabIndex = 2;
             this.ibChildForm.Text = "Home";
             this.ibChildForm.UseVisualStyleBackColor = false;
+            this.ibChildForm.Click += new System.EventHandler(this.ibChildForm_Click);
             // 
             // panelDesktop
             // 
