@@ -39,6 +39,7 @@
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelTop.SuspendLayout();
+            this.panelDesktop.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -128,7 +129,6 @@
             // 
             // panelTop
             // 
-            this.panelTop.Controls.Add(this.flowLayoutPanel1);
             this.panelTop.Controls.Add(this.ibChildForm);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(220, 0);
@@ -138,7 +138,7 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(500, 74);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(486, 66);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 80);
@@ -165,6 +165,7 @@
             // 
             // panelDesktop
             // 
+            this.panelDesktop.Controls.Add(this.flowLayoutPanel1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 80);
             this.panelDesktop.Name = "panelDesktop";
@@ -185,6 +186,7 @@
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
             this.panelTop.ResumeLayout(false);
+            this.panelDesktop.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
