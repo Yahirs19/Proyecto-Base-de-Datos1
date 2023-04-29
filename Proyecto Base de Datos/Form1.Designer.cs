@@ -36,9 +36,9 @@
             this.panelTop = new System.Windows.Forms.Panel();
             this.ibChildForm = new FontAwesome.Sharp.IconButton();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelTop.SuspendLayout();
             this.panelDesktop.SuspendLayout();
@@ -171,6 +171,15 @@
             this.panelDesktop.Size = new System.Drawing.Size(1082, 679);
             this.panelDesktop.TabIndex = 2;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(275, 103);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(153, 20);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "labelkemish pendejo";
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -189,15 +198,6 @@
             this.label2.Size = new System.Drawing.Size(97, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "yahor guapo";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(275, 103);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(153, 20);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "labelkemish pendejo";
             // 
             // Form1
             // 
